@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Personal Portfolio Webpage</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+
+            }
+            #navbar{
+                position: fixed;
+                top: 0px;
+                width: 100%;
+            }
+            ul{
+                list-style-type: none;
+                margin:0;
+                padding:0;
+                background-color:gray;
+            }
+            li{
+                float:right;
+            }
+            li a{
+                display:block;
+                color:blue;
+                text-align:center;
+                padding:14px 16px;
+                text-decoration:none;
+            }
+            section{
+                width:100vw;
+                text-align:center;
+            }
+            #welcome-section{
+                height:100vh;
+                margin-top:50px;
+                background-color:silver;
+            }
+            #projects{
+                background-color:white;
+            }
+            #contact{
+                background:greenyellow;
+            }
+            img{
+                width:300px;
+                height:300px;
+            }
+            .project-tile{
+
+            }
+            #profile-link{
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;    
+                text-align: center; 
+            }
+            @media (max-width:1023px){
+                li{
+                    float:left;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#welcome-section">About</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <section id="welcome-section">
+            <h1>Hey I am Youssoufa.</h1>
+            <p>a web developer.</p>
+        </section>
+        <section id="projects">
+            <h2>These are some of my projects</h2>
+            <a href="#" class="project-tile"><img src="Capture-survey-form.PNG" alt="Survey Form"></a>
+        </section>
+        <section id="contact">
+            <h2>let's work together...</h2>
+            <p>How do you like your coffee?</p>
+            <a href="_blank" target="_blank" id="profile-link">Github</a>
+        </section>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
